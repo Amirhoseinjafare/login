@@ -1,7 +1,13 @@
-<html>
-<body>
-Your usename is: <?php echo $_GET["usename"]; ?><br>
-Your password is: <?php echo $_GET["password"]; ?>
-</body>
-</html>
-
+<?php
+$p_n=$_GET["password"];
+$y_n=$_GET["usename"]; //یوزر نیم اون فیلد رو اینجا گرفتم
+$x =array("javad", "Amir", "mahan");
+if (in_array($y_n, $x)&& $p_n==123456)
+{
+echo "welcom ";
+}
+else
+{
+echo " your usename is not fund ";
+}
+ ?>
